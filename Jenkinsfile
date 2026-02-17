@@ -27,7 +27,7 @@ pipeline {
                 always {
                     junit allowEmptyResults: true, testResults: 'reports/junit/*.xml'
                     publishHTML(target: [
-                        reportDir: 'reports/coverage/lcov-report/',
+                        reportDir: '',
                         reportFiles: 'index.html',
                         reportName: 'Coverage Report',
                         keepAll: true,
