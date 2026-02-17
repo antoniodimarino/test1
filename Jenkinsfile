@@ -15,13 +15,13 @@ pipeline {
 
         stage('Install') {
             steps {
-                sh 'npm install'
+                sh 'npm ci'
             }
         }
 
         stage('Test') {
             steps {
-                sh 'npm run test'
+                sh 'npm run test:ci'
             }
             post {
                 always {
